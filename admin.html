@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin \u2014 Edit Website Content</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell">
+  <header class="admin-header">
+    <h1>Edit Website Content</h1>
+    <p>Change your product, prices, text and contact info below, then download the updated file and upload it to your site. No coding needed.</p>
+  </header>
+
+  <div class="admin-banner">
+    <b>How this works:</b> this page only edits a file called <code>config.js</code> on your own computer \u2014 it does not change your live website by itself.
+    After editing, click <b>Download config.js</b> below, then replace the old <code>config.js</code> file in your GitHub repository with the new one
+    (see README.md for exact steps). Your changes go live a minute or two after you upload it.
+  </div>
+
+  <div id="admin-error" class="admin-error">
+    Couldn't find <code>config.js</code>. Make sure this file sits in the same folder as <code>index.html</code> and <code>config.js</code>.
+  </div>
+
+  <div class="admin-toolbar">
+    <label class="btn btn-outline file-btn">
+      Import a config.js file
+      <input type="file" id="import-file" accept=".js" hidden>
+    </label>
+    <button id="btn-reset" class="btn btn-outline" type="button">Reset changes</button>
+    <button id="btn-download" class="btn btn-primary" type="button">Download config.js</button>
+  </div>
+
+  <div class="admin-layout">
+    <form id="admin-form" class="admin-form">
+
+      <section class="admin-section">
+        <h2>Brand</h2>
+        <label>Brand name</label>
+        <input id="f-brand-name" type="text">
+        <label>Tagline</label>
+        <input id="f-brand-tagline" type="text">
+      </section>
+
+      <section class="admin-section">
+        <h2>Home Page (Hero)</h2>
+        <label>Small label above the headline</label>
+        <input id="f-hero-eyebrow" type="text">
+        <label>Main headline</label>
+        <input id="f-hero-headline" type="text">
+        <label>Subtext</label>
+        <textarea id="f-hero-subtext" rows="2"></textarea>
+        <label>WhatsApp button text</label>
+        <input id="f-hero-primary-btn" type="text">
+        <label>Second button text</label>
+        <input id="f-hero-secondary-btn" type="text">
+      </section>
+
+      <section class="admin-section">
+        <h2>Product</h2>
+        <label>Product name</label>
+        <input id="f-product-name" type="text">
+        <div class="two-col">
+          <div>
+            <label>Price (PKR)</label>
+            <input id="f-product-price" type="number" min="0">
+          </div>
+          <div>
+            <label>Old price (optional, for a strike-through)</label>
+            <input id="f-product-oldprice" type="number" min="0">
+          </div>
+        </div>
+        <label>Weight / size label</label>
+        <input id="f-product-weight" type="text" placeholder="e.g. 100g jar">
+        <label>Description</label>
+        <textarea id="f-product-desc" rows="4"></textarea>
+        <label>Ingredients (comma separated)</label>
+        <input id="f-product-ingredients" type="text" placeholder="Neem, Clove, Mint">
+        <label>Product image</label>
+        <input id="f-product-image" type="text" placeholder="images/product.jpg or a full image URL">
+        <label class="file-btn small">Or upload a photo from your device
+          <input type="file" id="product-image-file" accept="image/*" hidden>
+        </label>
+        <label class="checkbox-row"><input type="checkbox" id="f-product-cod"> Cash on Delivery available</label>
+        <label>Cash on Delivery note</label>
+        <input id="f-product-codnote" type="text">
+      </section>
+
+      <section class="admin-section">
+        <h2>Benefits (up to 6)</h2>
+        <div id="benefits-fields"></div>
+      </section>
+
+      <section class="admin-section">
+        <h2>How to Use (3 steps)</h2>
+        <div id="steps-fields"></div>
+      </section>
+
+      <section class="admin-section">
+        <h2>About the Brand</h2>
+        <label>Heading</label>
+        <input id="f-about-heading" type="text">
+        <label>Story text</label>
+        <textarea id="f-about-text" rows="5"></textarea>
+        <label>About image</label>
+        <input id="f-about-image" type="text" placeholder="images/about.jpg or a full image URL">
+        <label class="file-btn small">Or upload a photo from your device
+          <input type="file" id="about-image-file" accept="image/*" hidden>
+        </label>
+        <label>Small signature line</label>
+        <input id="f-about-signature" type="text">
+      </section>
+
+      <section class="admin-section">
+        <h2>Contact & WhatsApp</h2>
+        <label>WhatsApp number (with country code, e.g. 923001234567)</label>
+        <input id="f-whatsapp-number" type="text" placeholder="923001234567">
+        <label>WhatsApp message template</label>
+        <textarea id="f-whatsapp-message" rows="2"></textarea>
+        <p class="hint">Use <code>{product}</code> and <code>{price}</code> \u2014 they'll be filled in automatically.</p>
+        <label>Phone number to display</label>
+        <input id="f-phone" type="text">
+        <label>Email</label>
+        <input id="f-email" type="email">
+        <label>Address</label>
+        <input id="f-address" type="text">
+        <label>Order hours</label>
+        <input id="f-hours" type="text">
+        <div class="two-col">
+          <div>
+            <label>Instagram link</label>
+            <input id="f-instagram" type="text">
+          </div>
+          <div>
+            <label>Facebook link</label>
+            <input id="f-facebook" type="text">
+          </div>
+        </div>
+      </section>
+
+      <section class="admin-section">
+        <h2>Footer</h2>
+        <label>Footer text</label>
+        <input id="f-footer-text" type="text">
+      </section>
+    </form>
+
+    <aside class="admin-preview">
+      <div class="preview-sticky">
+        <p class="eyebrow">Live Preview</p>
+        <div class="preview-card">
+          <img id="pv-image" src="" alt="Product preview">
+          <p class="preview-brand" id="pv-brand"></p>
+          <h3 id="pv-name"></h3>
+          <div class="price-row">
+            <span class="price-now" id="pv-price"></span>
+            <span class="price-old" id="pv-oldprice"></span>
+          </div>
+          <p id="pv-desc" class="preview-desc"></p>
+        </div>
+        <button id="btn-download-2" class="btn btn-primary btn-block" type="button" onclick="document.getElementById('btn-download').click()">Download config.js</button>
+        <a href="index.html" class="btn btn-outline btn-block" style="margin-top:10px;">View Live Site</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="js/admin.js"></script>
+<script>
+  // Build the repeated Benefit / Step fields without hand-typing 18 inputs
+  const benefitsWrap = document.getElementById("benefits-fields");
+  for (let i = 0; i < 6; i++) {
+    benefitsWrap.insertAdjacentHTML("beforeend", `
+      <div class="repeat-block">
+        <label>Benefit ${i + 1} title</label>
+        <input id="f-benefit-${i}-title" type="text">
+        <label>Benefit ${i + 1} text</label>
+        <input id="f-benefit-${i}-text" type="text">
+      </div>`);
+  }
+  const stepsWrap = document.getElementById("steps-fields");
+  for (let i = 0; i < 3; i++) {
+    stepsWrap.insertAdjacentHTML("beforeend", `
+      <div class="repeat-block">
+        <label>Step ${i + 1} title</label>
+        <input id="f-step-${i}-title" type="text">
+        <label>Step ${i + 1} text</label>
+        <input id="f-step-${i}-text" type="text">
+      </div>`);
+  }
+</script>
+</body>
+</html>

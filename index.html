@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organic Tooth Powder</title>
+<meta name="description" content="Organic tooth powder made in Pakistan &mdash; no fluoride, no nasties, hand-blended in small batches.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#home" class="nav-logo" data-brand-name>Brand</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#how-to-use">How to Use</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a id="nav-cta" class="btn btn-outline" href="#" target="_blank" rel="noopener">Order Now</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="wrap">
+    <svg class="stamp" viewBox="0 0 200 200">
+      <defs>
+        <path id="stampCircle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/>
+      </defs>
+      <circle cx="100" cy="100" r="94" fill="none" stroke="#b08d57" stroke-width="1"/>
+      <circle cx="100" cy="100" r="60" fill="none" stroke="#b08d57" stroke-width="1"/>
+      <text font-family="JetBrains Mono, monospace" font-size="10.5" letter-spacing="3" fill="#f1ead9">
+        <textPath href="#stampCircle" startOffset="0%">ORGANIC &middot; HANDMADE &middot; PAKISTAN &middot; SINCE 2021 &middot;</textPath>
+      </text>
+      <text x="100" y="94" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="#f1ead9">100%</text>
+      <text x="100" y="114" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.5" fill="#b08d57">NATURAL</text>
+    </svg>
+    <p class="eyebrow" id="hero-eyebrow"></p>
+    <h1 id="hero-headline"></h1>
+    <p class="hero-subtext" id="hero-subtext"></p>
+    <div class="hero-actions">
+      <a id="hero-primary-btn" class="btn btn-primary" href="#" target="_blank" rel="noopener"></a>
+      <a id="hero-secondary-btn" class="btn btn-outline-dark" href="#product"></a>
+    </div>
+  </div>
+</header>
+
+<section class="section section-bone" id="product">
+  <div class="wrap product-grid">
+    <div class="product-media">
+      <img id="product-image" src="" alt="Product">
+    </div>
+    <div class="product-info">
+      <p class="eyebrow">The Product</p>
+      <h2 id="product-name" style="margin-top:10px;"></h2>
+      <p class="product-weight" id="product-weight" style="margin-top:8px;"></p>
+      <div class="price-row">
+        <span class="price-now" id="price-now"></span>
+        <span class="price-old" id="price-old"></span>
+      </div>
+      <p class="product-desc" id="product-desc"></p>
+      <div class="tags" id="product-tags"></div>
+      <div class="product-actions">
+        <a id="product-order-btn" class="btn btn-primary" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+      <p class="cod-note" id="cod-note"></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="benefits">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why It Works</span>
+      <h2>Made from what your mouth already knows</h2>
+    </div>
+    <div class="benefits-grid" id="benefits-grid"></div>
+  </div>
+</section>
+
+<section class="section section-sage" id="how-to-use">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="color:#f1ead9cc;">The Ritual</span>
+      <h2>How to use it</h2>
+    </div>
+    <div class="steps" id="steps-list"></div>
+  </div>
+</section>
+
+<section class="section section-bone" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media">
+      <img id="about-image" src="" alt="About">
+    </div>
+    <div class="about-text">
+      <span class="eyebrow">Our Story</span>
+      <h2 id="about-heading" style="margin-top:10px;"></h2>
+      <p id="about-text"></p>
+      <p class="about-signature" id="about-signature"></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow">Get In Touch</span>
+      <h2 style="margin-top:10px;">Order or ask us anything</h2>
+      <ul class="contact-list">
+        <li><b>Phone</b> <span id="contact-phone"></span></li>
+        <li><b>Email</b> <a id="contact-email" href="#"></a></li>
+        <li><b>Address</b> <span id="contact-address"></span></li>
+        <li><b>Hours</b> <span id="contact-hours"></span></li>
+      </ul>
+      <div class="social-row">
+        <a id="contact-instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a id="contact-facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <form class="order-form" id="order-form">
+      <span class="eyebrow">Quick Order</span>
+      <label for="form-name">Your Name</label>
+      <input id="form-name" type="text" required placeholder="e.g. Ayesha Khan">
+      <label for="form-qty">Quantity</label>
+      <input id="form-qty" type="number" min="1" value="1">
+      <label for="form-address">Delivery Address</label>
+      <textarea id="form-address" required placeholder="House #, Street, City"></textarea>
+      <button type="submit" class="btn btn-primary btn-block">Send Order via WhatsApp</button>
+      <p class="order-form-hint">This opens WhatsApp with your order details filled in &mdash; just hit send.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p id="footer-text"></p>
+  </div>
+</footer>
+
+<a id="fab-whatsapp" class="fab-whatsapp" href="#" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#08320f"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.6.8 5 2.1 7L3 29l6.7-2.3c1.9 1 4.1 1.6 6.3 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3zm0 22.7c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1.4 1.3-3.9-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.8 0-5.9 4.8-10.6 10.7-10.6 5.9 0 10.7 4.8 10.7 10.6 0 5.9-4.8 10.4-10.7 10.4zm5.8-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.9-1.7-2.2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
