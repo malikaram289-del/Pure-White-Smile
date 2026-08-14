@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#33302a"/>
+      <stop offset="100%" stop-color="#1c1b18"/>
+    </radialGradient>
+  </defs>
+  <rect width="480" height="480" fill="url(#bg)"/>
+  <!-- jar body -->
+  <rect x="150" y="170" width="180" height="220" rx="18" fill="#efe7d8"/>
+  <rect x="150" y="170" width="180" height="220" rx="18" fill="none" stroke="#b08d57" stroke-width="2"/>
+  <!-- lid -->
+  <rect x="140" y="130" width="200" height="46" rx="10" fill="#8b3a2a"/>
+  <rect x="150" y="118" width="180" height="20" rx="8" fill="#6c2c1f"/>
+  <!-- label -->
+  <rect x="168" y="230" width="144" height="110" rx="4" fill="#f6f1e6" stroke="#1c1b18" stroke-width="1.5"/>
+  <circle cx="240" cy="260" r="20" fill="none" stroke="#5c6b4f" stroke-width="1.5"/>
+  <text x="240" y="265" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#5c6b4f">100%</text>
+  <text x="240" y="300" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#1c1b18">DANDASA</text>
+  <text x="240" y="318" text-anchor="middle" font-family="Georgia, serif" font-size="11" letter-spacing="2" fill="#8b3a2a">TOOTH POWDER</text>
+  <!-- leaf sprigs -->
+  <path d="M120 200 C90 190 80 150 90 120 C120 130 140 160 120 200 Z" fill="#5c6b4f"/>
+  <path d="M360 210 C392 198 404 156 392 126 C360 138 340 170 360 210 Z" fill="#5c6b4f"/>
+  <!-- powder scatter -->
+  <g fill="#b08d57" opacity="0.7">
+    <circle cx="160" cy="410" r="3"/>
+    <circle cx="180" cy="420" r="2"/>
+    <circle cx="205" cy="415" r="2.5"/>
+    <circle cx="300" cy="418" r="2"/>
+    <circle cx="320" cy="408" r="3"/>
+    <circle cx="270" cy="425" r="2"/>
+  </g>
+</svg>

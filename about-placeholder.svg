@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" width="480" height="380">
+  <rect width="480" height="380" fill="#5c6b4f"/>
+  <g opacity="0.5" fill="#efe7d8">
+    <circle cx="40" cy="40" r="1.5"/><circle cx="70" cy="60" r="1.5"/><circle cx="100" cy="35" r="1.5"/>
+    <circle cx="140" cy="70" r="1.5"/><circle cx="180" cy="40" r="1.5"/><circle cx="220" cy="65" r="1.5"/>
+    <circle cx="260" cy="35" r="1.5"/><circle cx="300" cy="60" r="1.5"/><circle cx="340" cy="40" r="1.5"/>
+    <circle cx="380" cy="65" r="1.5"/><circle cx="420" cy="35" r="1.5"/><circle cx="450" cy="60" r="1.5"/>
+  </g>
+  <circle cx="240" cy="190" r="86" fill="none" stroke="#efe7d8" stroke-width="1.5"/>
+  <path d="M240 130 C270 150 285 175 270 210 C260 232 240 240 240 240 C240 240 220 232 210 210 C195 175 210 150 240 130 Z" fill="#efe7d8"/>
+  <path d="M240 150 L240 235" stroke="#5c6b4f" stroke-width="2"/>
+  <text x="240" y="300" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="3" fill="#efe7d8">ROOTED IN TRADITION</text>
+</svg>
