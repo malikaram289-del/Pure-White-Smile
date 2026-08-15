@@ -37,7 +37,7 @@ window.SITE_CONFIG = {
     "currency": "PKR",
     "weight": "100g bottle",
     "description": "A simple tooth powder for your daily oral-care routine, designed to help keep teeth clean and your mouth feeling fresh.",
-    "image": "image": "images/file_0000000048cc822fb11698fd0284ae97.png",
+    "image": "images/file_0000000048cc822fb11698fd0284ae97.png",
     "ingredients": ["Natural Ingredients"],
     "codAvailable": true,
     "codNote": "Cash on Delivery available across Pakistan"
