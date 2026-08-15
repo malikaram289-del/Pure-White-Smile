@@ -18,7 +18,7 @@
 window.SITE_CONFIG = {
   "brand": {
     "name": "Pure White Smile",
-    "tagline": "Organic Tooth Powder, made in Pakistan",
+    "tagline": "Organic Tooth Powder for a Fresh, Clean Smile",
     "logoText": "Pure White Smile"
   },
 
@@ -31,14 +31,14 @@ window.SITE_CONFIG = {
   },
 
   "product": {
-    "name": "Pure White Smile Organic Tooth Powder",
-    "price": 799,
-    "oldPrice": 999,
+    "name": "Organic Tooth Powder",
+    "price": 999,
+    "oldPrice": 1399,
     "currency": "PKR",
-    "weight": "100g jar",
-    "description": "Our tooth powder is stone-ground from sun-dried Dandasa root, neem leaf, clove and rock salt \u2014 the same ingredients village hakeems have used for generations to clean teeth and freshen breath, with no fluoride, no foaming agents and no artificial flavour.",
-    "image": "images/product-placeholder.svg",
-    "ingredients": ["Dandasa Root", "Neem", "Clove", "Black Salt", "Mint", "Activated Charcoal"],
+    "weight": "100g bottle",
+    "description": "A simple tooth powder for your daily oral-care routine, designed to help keep teeth clean and your mouth feeling fresh.",
+    "image": "image": "images/file_0000000048cc822fb11698fd0284ae97.png",
+    "ingredients": ["Natural Ingredients"],
     "codAvailable": true,
     "codNote": "Cash on Delivery available across Pakistan"
   },
@@ -99,9 +99,9 @@ window.SITE_CONFIG = {
   },
 
   "contact": {
-    "whatsappNumber": "923001234567",
-    "whatsappMessage": "Assalam-o-Alaikum! I'd like to order the {product} ({price}).",
-    "phoneDisplay": "+92 300 1234567",
+    "whatsappNumber": "923040001608",
+    "whatsappMessage":"Assalam o Alaikum, I want to order {product} for PKR {price}.",
+    "phoneDisplay": "+92 304 0001608",
     "email": "hello@purewhitesmile.pk",
     "address": "Lahore, Punjab, Pakistan",
     "instagram": "https://instagram.com/purewhitesmile",
